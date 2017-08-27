@@ -1,0 +1,229 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Showing what I can do!</title>
+
+	<link rel="icon" href="assets/image/favicon.ico" type="image/ico"/>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- My CSS Style sheet location -->
+	<link rel="stylesheet" type="text/css" href="assets/css/sampler-style.css">
+	<!-- Fonts I am using -->
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script|Timmana|Montserrat|Manuale|Rock+Salt|Poppins" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container-fluid">
+ 	<div class="row">
+		<div class="intro">
+			<div>-- So what can I build for you? --</div>
+		</div>
+		<div class="what-want">
+			<div>-- Let's start with what you want! --</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="hr-divider">
+			<hr class="hr-top" />
+			<hr class="hr-middle" />
+			<hr class="hr-bottom" />
+		</div>
+	</div>
+<!-- Math segment starts  -->
+	<div class="row">
+		<div class="math-intro">
+			<div>Maybe something to calculate?</div>
+		</div>
+		<form class="form-inline">
+	  		<div class="form-group">
+				<input type="text" class="form-control" id="number1" maxlength="2" placeholder="00">
+ 	 		</div>
+  			<div class="form-group">
+				<input type="text" class="form-control" id="operator1" maxlength="1" placeholder="+, -, x, or /">
+  			</div>
+  			<div class="form-group">
+				<input type="text" class="form-control" id="number2" maxlength="2" placeholder="00">
+  			</div>
+  			<div class="form-group">
+				<input type="text" class="form-control" id="operator2" maxlength="1" placeholder="+, -, x, or /">
+  			</div>
+  			<div class="form-group">
+				<input type="text" class="form-control" id="number3" maxlength="2" placeholder="00">
+  			</div>		
+  		</form>
+  		<div class="math-button">
+  			<button class="btn btn-default" id="math-submit" type="submit">The Answer</button>
+  			<button class="btn btn-default" id="math-reset" type="submit">Reset</button>
+  		</div>
+  		<div class="math-answer" id="math-answer">Answer Here</div>
+	</div>
+	<div class="row">
+		<div class="hr-divider">
+			<hr class="hr-top" />
+			<hr class="hr-middle" />
+			<hr class="hr-bottom" />
+		</div>
+	</div>
+<!-- Weather segment starts  -->
+	<div class="row">
+		<div class="weather">
+			<select class="weather-pulldown">
+  				<option>Pick the city here</option>
+  				<option value="Anchorage, AK" id="5879400">Anchorage, AK</option>
+  				<option value="Bangor, ME" id="4957280">Bangor, ME</option>
+  				<option value="Baton Rouge, LA" id="4315588">Baton Rouge, LA</option>
+  				<option value="Duluth, MN" id="5024719">Duluth, MN</option>
+  				<option value="Missoula, MT" id="5666639">Missoula, MT</option>
+  				<option value="Nashville, TN" id="4644585">Nashville, TN</option>
+  				<option value="Seattle, WA" id="5809844">Seattle, WA</option>
+  				<option value="Sioux City, IA" id="4876523">Sioux City, IA</option>
+  				<option value="Sarasota, FL" id="4172131">Sarasota, FL</option>
+  				<option value="Tempe, AZ" id="5317058">Tempe, AZ</option>
+			</select>
+			<span class="weather-instructions">How about checking out the weather in one of the listed cities?</span>
+		</div>
+	</div>
+<!-- Here is the Modal for the weather  -->
+	<div id="localWeather" class="modal fade" tabindex="-1" role="dialog">
+  		<div class="modal-dialog" role="document">
+   			<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       				 <h4 class="modal-title">Current weather in <span class="where">town</span></h4>
+      			</div>
+      			<div class="modal-body">
+      				<img src="" alt="icon" id="looksLike" style="width:20%; height: 20%;">
+        			<h4><span class="pressSky">PS</span> . . . temperature is <span class="cityTemp">T</span>&#176; F</h4>
+        			<h4>wind is from the <span class="windDir">W</span> at <span class="windSp">S</span> mph</h4>
+     			</div>
+    		</div>
+  		</div>
+	</div>
+	<div class="row">
+		<div class="hr-divider">
+			<hr class="hr-top" />
+			<hr class="hr-middle" />
+			<hr class="hr-bottom" />
+		</div>
+	</div>
+<!-- List segment starts  -->
+	<div class="row">
+		<div class="list-intro">Now how about playing with lists?
+			<div class="list-intro-adder">You can add the next planet in line.  
+			And/or remove a planet from the list by entering the planet's item number i.e 2 for Venus.</div>
+		</div>
+		<div class="row">	
+			<div class="col-md-4">
+				<div class="list-title">Planets</div>
+				<ol class="planet-list">
+					<li>Mercury</li>
+					<li>Venus</li>
+					<li>Earth</li>
+					<li>what is the next one?</li>
+				</ol>
+			</div>
+			<div class="col-md-8">
+				<div class="list-user">Here's were you add a planet to the list.</div>
+				<div class="input-group">		
+					<input type="text" class="form-control" id="list-adder" placeholder="Add to list">
+					<span class="input-group-btn">
+						<button class="btn btn-default" id="add-to-list" type="submit">Add</button>
+					</span>
+				</div>
+				<div class="list-user">And if you want to remove a planet from the list.  Enter its number here.</div>
+				<div class="input-group">					
+					<input type="text" class="form-control" id="remove-item" placeholder="Remove from list">
+					<span class="input-group-btn">
+						<button class="btn btn-default" id="remove-from-list" type="submit">Remove</button>
+					</span>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<div class="row">
+		<div class="hr-divider">
+			<hr class="hr-top" />
+			<hr class="hr-middle" />
+			<hr class="hr-bottom" />
+		</div>
+	</div>
+<!-- Fun segment starts  -->
+	<div class="row">
+		<div class="box-intro">And finally . . how about some HTML fun!</div>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="for-border">
+					<div id="box" style="height:90px; width:90px; background-color:blue; opacity:1.0;"></div>
+					<div class="row">
+						<div class="col-md-4">				
+							<div class="box-size">
+								<button class="btn btn-default center-block" id="make-taller" type="submit">Make Taller</button>
+								<button class="btn btn-default center-block" id="make-wider" type="submit">Make Wider</button>
+							</div>
+						</div>						
+						<div class="col-md-4">
+							<div class="box-color">							
+								<button class="btn btn-default center-block" id="change-color" type="submit">Change Color</button>
+								<button class="btn btn-default center-block" id="fade-out" type="submit">Fade Out</button>
+								<button class="btn btn-default center-block" id="fade-in" type="submit">Fade In</button>
+							</div>						
+						</div>
+						<div class="col-md-4">				
+							<div class="box-slide">							
+								<button class="btn btn-default center-block" id="slide-up" type="submit">SLide Up</button>
+								<button class="btn btn-default center-block" id="slide-down" type="submit">Slide Down</button>
+							</div>				
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="col-md-4">
+     			<img src="./assets/image/dog.png" alt="An image matching the sound" id="sound-image" style="width:50%; height: 50%;">
+				<audio src="./assets/audio/dog.mp3" id="sound" type="audio/mpeg"></audio>
+				<div class="change-sound">
+					<button class="btn btn-default center-block" id="make-sound" type="submit">Sounds Like</button>
+				</div>
+			</div>		
+		</div>			
+	</div>
+		<div class="row">
+		<div class="hr-divider">
+			<hr class="hr-top" />
+			<hr class="hr-middle" />
+			<hr class="hr-bottom" />
+		</div>
+	</div>
+<!-- Contact segment starts  -->
+	<div class="row">
+		<div class="col-md-3">	
+			<div class="contact-pic">
+				<img src="./assets/image/mollert-pick.png" alt="My picture goes here" id="my-image" style="width:60%; height: 60%;">
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div class="contact-info">David Mollert<br>dmollert&#64;gmail.com</div>
+		</div>
+		<div class="col-md-4">			
+			<div class="contact-btn">
+				 <a href="assets/resume/mollert-resume.htm" target="_blank" class="btn btn-default" id="to-resume">Resume</a>
+			</div>
+		</div>
+	</div>	
+</div>
+
+	<script src="./assets/javascript/js-math.js"></script>
+	<script src="./assets/javascript/js-weather.js"></script>
+	<script src="./assets/javascript/js-list.js"></script>
+	<script src="./assets/javascript/js-fun.js"></script>	
+
+</body>
+</html>

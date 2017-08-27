@@ -1,0 +1,234 @@
+
+body {
+	background-image: url("../image/scaffolding80.png");
+	background-color: #FAEBD7;
+}
+/* Introduction to website */
+.intro,
+.what-want {
+	font-family: "Timmana", sans-serif;
+	font-size: 30px;
+}
+
+.intro {
+	margin-top: 10px;
+	margin-left: 14%;
+}
+
+.what-want {
+	margin-left: 30%;
+}
+
+.hr-top {
+	width: 60%;
+	border: 1px solid;
+	opacity: .5;
+	margin-top: 2px;
+	margin-bottom: -16px;
+}
+
+.hr-middle {
+	width: 90%;
+	border: 1px solid;
+	margin-bottom: -16px;
+}
+
+.hr-bottom {
+	width: 70%;
+	opacity: .5;
+	border: 1px solid;
+}
+/* Math section starts */
+.math-intro,
+.math-answer {
+	font-family: "Oleo Script", cursive;
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-inline {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#number1,
+#number2,
+#number3 {
+	max-width: 60px;
+	font-family: "Oleo Script", cursive;
+	font-size: 20px;
+	text-align: center;
+}
+
+#operator1,
+#operator2 {
+	max-width: 120px;
+	font-family: "Oleo Script", cursive;
+	font-size: 20px;
+	text-align: center;
+}
+
+.math-button {
+	font-family: "Oleo Script", cursive;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#math-submit {	
+	font-size: 20px;
+	margin-right: 20px;
+	background-color: #9ACD32;
+	border-radius: 10px;
+}
+
+#math-reset {
+	font-size: 20px;
+	margin-left: 20px;
+	background-color: #FFA07A;
+	border-radius: 10px;
+}
+/* Weather section starts */
+.weather {
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 20px;
+	color: purple;
+}
+
+.weather-pulldown {
+	font-size: 18px;
+	padding: 7px;
+	background: lightblue;
+	color: purple;
+	margin-left: 40px;
+	border-radius: 10px;
+}
+
+.weather-instructions {
+	font-size: 20px;
+	margin-left: 40px;
+}
+/* List section starts */
+.list-intro {
+	font-family: "Manuale", serif;
+	font-size: 24px;
+	text-align: center;
+	color: #A52A2A;
+	margin-bottom: 20px;	
+}
+
+.list-intro-adder {
+	font-size: 18px;
+}
+
+.list-title {
+	font-family: "Manuale", serif;
+	font-size: 18px;
+	color: #A52A2A;	
+	text-decoration: underline;
+	margin-left: 60px;	
+}
+
+.planet-list {
+	font-family: "Manuale", serif;
+	font-size: 18px;
+	color: #A52A2A;
+	margin-left: 16px;	
+}
+
+.list-user {
+	font-family: "Manuale", serif;
+	font-size: 18px;
+	color: #A52A2A;	
+}
+
+#list-adder,
+#remove-item {
+	max-width: 300px;
+	font-family: "Manuale", serif;
+	font-size: 16px;
+}
+
+.input-group {
+	margin-right: 200px;
+}
+
+#add-to-list,
+#remove-from-list {
+	font-family: "Manuale", serif;
+	font-size: 16px;
+	color: #A52A2A;	
+}
+
+#add-to-list {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/* Fun section starts */
+.box-intro {
+	font-family: "Rock Salt", cursive;
+	font-size: 20px;
+	color: green;	
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.for-border {
+	border-right: 6px dashed #008000;
+	margin-bottom: 20px;
+}
+
+#box,
+#sound-image {
+	display: block;
+    margin: auto;
+	margin-bottom: 20px;
+}
+
+.box-size,
+.box-slide,
+.box-color,
+.change-sound {
+	font-family: "Rock Salt", cursive;
+}
+
+#make-taller,
+#make-wider,
+#slide-up,
+#slide-down,
+#change-color,
+#fade-out,
+#fade-in,
+#make-sound {
+	margin-bottom: 6px;
+	background-color: #32CD32;	
+}
+/* Contact section starts */
+.contact-pic {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.contact-info {
+	font-family: "Poppins", sans-serif;
+	font-size: 24px;
+	color: #8B4513;
+	margin-top: 50px;
+}
+
+#to-resume {
+	font-family: "Poppins", sans-serif;
+	font-size: 24px;
+	background-color: #CD853F;
+	margin-top: 60px;
+}
+
+/* Contact section starts */
+
+
+
+
+
+
