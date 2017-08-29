@@ -6,7 +6,9 @@ $(".weather-pulldown").change(function() {
 
 	var weatherKey = "76133c3040e5f58469882b342b5116eb";
 
-	var search = "http://api.openweathermap.org/data/2.5/forecast?id="
+	var translate = "https://cors-anywhere.herokuapp.com/";
+
+	var search = translate + "http://api.openweathermap.org/data/2.5/forecast?id="
 				 + cityID + "&units=imperial&APPID=" + weatherKey;
 
 	$.ajax({
