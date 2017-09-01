@@ -5,12 +5,17 @@ $("#add-to-list").on("click", function() {
 	var userPlanet = $("#list-adder").val().trim();
 
 	userEntry = checkPlanet(userPlanet);
-
+	console.log(userEntry);
 	if ( userEntry == "wrong" ) {
-		alert('You entered "' + userPlanet + '".\nYou should check the spelling and try again.');
+		alert('You entered "' + userPlanet + '".\nHow about checking the spelling and try again.');     // Here
+	}
+	else if ( userEntry == "pluto" ) {
+		alert("Sorry, Pluto is no longer considered a planet.");
 	} else {
 		$(".planet-list").append("<li>" + userEntry + "</li>");
 	}
+	
+	$("#list-adder").val("");
 });
 
 // Removes list item user selects
@@ -20,6 +25,9 @@ $("#remove-from-list").on("click", function() {
 	item = item - 1;
 
 	$("li").eq(item).remove();
+
+	$("#remove-item").val("");
+
 });
 	
 // Checks user input and returns capitalized planet 
@@ -36,6 +44,9 @@ function checkPlanet(userSelect) {
 	}
 	if ( correct == 1 ) {
 		return match;
+	}
+	else if ( userSelect.toLowerCase() == "pluto" ) {
+		return "pluto";
 	} else {
 		return "wrong";
 	}	
