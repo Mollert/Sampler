@@ -5,7 +5,7 @@ $("#add-to-list").on("click", function() {
 	var userPlanet = $("#list-adder").val().trim();
 
 	userEntry = checkPlanet(userPlanet);
-	console.log(userEntry);
+	
 	if ( userEntry == "wrong" ) {
 		alert('You entered "' + userPlanet + '".\nHow about checking the spelling and try again.');     // Here
 	}
