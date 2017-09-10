@@ -204,11 +204,22 @@ body {
 	margin-bottom: 6px;
 	background-color: #32CD32;	
 }
+
+#sound-image {
+	height: 40%;
+    width: 40%;
+}
+
 /* Contact section starts */
 .contact-pic {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	text-align: center;
+}
+
+#my-image {
+	height: 60%;
+    width: 60%;
 }
 
 .contact-info {
@@ -223,4 +234,50 @@ body {
 	font-size: 20px;
 	background-color: #CD853F;
 	margin-top: 60px;
+}
+
+@media only screen and (max-width: 980px) {
+}
+
+@media only screen and (max-width: 786px) {
+	.row-weather {
+		margin-left: 40px;
+	}
+	.weather-pulldown {
+		margin-left: 0px;
+	}
+	.list-title,
+	.planet-list {
+		margin-left: 250px;
+	}
+	.list-user,
+	.input-group {
+		margin-left: 60px;
+	}
+	#sound-image {
+		height: 20%;
+    	width: 20%;
+	}
+	#my-image {
+		height: 30%;
+    	width: 30%;
+	}
+	#to-resume {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.row-math {
+		margin-left: 40px;
+	}
+	#sound-image {
+		height: 10%;
+    	width: 10%;
+	}
+	#my-image {
+		height: 15%;
+    	width: 15%;
+	}
 }
